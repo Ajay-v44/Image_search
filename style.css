@@ -52,7 +52,8 @@ form{
    justify-content: flex-start;
    flex-wrap: wrap;
    max-width: 1200px;
-   margin:0 auto;   
+   margin:0 auto;  
+   padding-left: 45px; 
 }
 .search-result {
     margin-bottom: 60px;
@@ -95,8 +96,24 @@ form{
    margin:30px auto;
    border-radius: 5px;
    cursor:pointer;
-   /*display: none;*/
+   display: none;
 }
+@media screen and(max-width:768px) {
+    .search-results{
+        padding: 20px;
+    }
+    .search-result{
+        width:45%;
+    }
+    
+}
+@media screen and(max-width:480px) {
+    .search-result{
+        width: 100%;
+    }
+    
+}
+
 
 
 
